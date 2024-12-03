@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="imagess/logo.webp" alt="ScholarshipFinder Logo" class="logo">
+            </div>
+            <div class="branding">
+                <h1>ScholarshipFinder</h1>
+                <p class="tagline">"Empowering Dreams, One Scholarship at a Time"</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section class="search-section">
+        <h2>Find Scholarships</h2>
+        <input type="text" id="search-bar" placeholder="Search for scholarships...">
+        <button onclick="searchScholarships()">Search</button>
+    </section>
+
+    <section id="results-section" class="results-section">
+        <h3>Search Results</h3>
+        <ul id="results-list"></ul>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 ScholarshipFinder. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

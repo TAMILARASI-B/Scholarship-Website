@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Scholarship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="imagess/logo.webp" alt="ScholarshipFinder Logo" class="logo">
+            </div>
+            <div class="branding">
+                <h1>ScholarshipFinder</h1>
+                <p class="tagline">"Empowering Dreams, One Scholarship at a Time"</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="scholarships.html">Scholarships</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Scholarship Application Form</h1>
+        <form action="submit-application.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="scholarship">Scholarship:</label>
+            <select id="scholarship" name="scholarship">
+                <option value="national-merit">National Merit Scholarship</option>
+                <option value="science-innovators">Science Innovators Grant</option>
+                <option value="global-leaders">Global Leaders Fellowship</option>
+            </select>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ScholarshipFinder. All rights reserved.</p>
+    </footer>
+</body>
+</html>
